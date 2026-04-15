@@ -1,16 +1,38 @@
 # product-thinking-playbook
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Bilingual: EN / 中文](https://img.shields.io/badge/bilingual-EN%20%2F%20%E4%B8%AD%E6%96%87-blue)](#)
+[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2)](./SKILL.md)
 [![Principles: 20](https://img.shields.io/badge/principles-20-orange)](./SKILL.md)
 [![Case studies: 6](https://img.shields.io/badge/case%20studies-6-green)](./case-studies)
-[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2)](./SKILL.md)
+[![Bilingual: EN / 中文](https://img.shields.io/badge/bilingual-EN%20%2F%20%E4%B8%AD%E6%96%87-blue)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 > A decision-making playbook for solo product builders — **20 principles across 5 dimensions**,  
 > extracted from the full development conversations of 6 shipped products.  
 > 独立开发者的产品思维手册 · 从 6 个已上线产品的全过程对话中提炼 · 20 条原则 / 5 个维度
 
-[中文](#中文) · [English](#english)
+[中文](#中文) · [English](#english) · [Quick Reference ↓](#quick-reference--一页速查表)
+
+---
+
+## Quick Reference · 一页速查表
+
+> **Stuck on a decision? Find the symptom, open the principle.**  
+> 卡住的时候，对照症状直接打开对应原则。
+
+| Symptom · 症状 | Principle · 原则 |
+|---|---|
+| "Don't know what to do first" · 不知道先做什么 | 01 Scenario-first · 02 Spec before code |
+| "Features piling up, can't stop" · 功能越加越多收不住 | 05 Subtract, don't add · 08 Infrastructure mindset |
+| "Looks the same as competitors" · 和同类产品看起来差不多 | 03 Aesthetic as stance · 10 Borrow cognition |
+| "Just using whatever AI gives me" · AI 给什么我用什么 | 11 Commander posture · 15 Experience before review |
+| "Tech says can't do it, thinking of downgrading" · 技术说做不到想降级 | 06 Vision non-negotiable |
+| "Bugs keep resurfacing" · bug 修了又出 | 13 End-to-end fixes · 14 Design vs execution error |
+| "Content quality is just off" · 内容质量总差一口气 | 12 Content standards > technical standards |
+| "Don't know if the product is any good" · 不知道产品好不好 | 17 Real engagement metrics |
+| "Shipped, what's next?" · 上线了不知道下一步 | 20 Distribution is product |
+| "Users complain, can't pin it down" · 用户反馈不对劲说不清 | 07 Product boundary · 18 Persistence = trust |
+
+👉 Full cheat-sheet: **[`quick-reference.md`](./quick-reference.md)** — with 5 daily self-checks and the three-line compression.
 
 ---
 
