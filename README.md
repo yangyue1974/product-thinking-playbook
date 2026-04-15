@@ -1,5 +1,11 @@
 # product-thinking-playbook
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Bilingual: EN / 中文](https://img.shields.io/badge/bilingual-EN%20%2F%20%E4%B8%AD%E6%96%87-blue)](#)
+[![Principles: 20](https://img.shields.io/badge/principles-20-orange)](./SKILL.md)
+[![Case studies: 6](https://img.shields.io/badge/case%20studies-6-green)](./case-studies)
+[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2)](./SKILL.md)
+
 > A decision-making playbook for solo product builders — **20 principles across 5 dimensions**,  
 > extracted from the full development conversations of 6 shipped products.  
 > 独立开发者的产品判断手册 · 从 6 个已上线产品的全过程对话中提炼 · 20 条原则 / 5 个维度
