@@ -1,7 +1,7 @@
-# 我的产品思维 · spybook.art 篇
+# Spybook · 产品思维案例
 
-> 从「自书·尘封卷宗」开发与上线过程提炼 · 2026.04  
-> 与前两篇（修仙密境 / Gospel Hub）互补，聚焦本项目特有的决策模式
+> 互动侦探叙事小说 · spybook.art  
+> 从「自书·尘封卷宗」开发与上线过程提炼 · 2026-04
 
 ---
 
@@ -39,8 +39,7 @@
 
 ## 四、存量数据够用时，不引入新工具
 
-> *（技术建议里比较了自建后台 vs Metabase vs PostHog 三个方案）*
-> *→ 选择：在 app 里加 /admin 页面，数据直接查 SQLite*
+技术建议里比较了自建后台 vs Metabase vs PostHog 三个方案，最终选择：**在 app 里加 /admin 页面，数据直接查 SQLite**。
 
 数据已经在 SQLite 里了，所有指标都能用 SQL 查出来。选择了零成本、零新依赖的方案，而不是接入 Metabase 或埋点 SDK。
 
@@ -68,9 +67,9 @@
 
 ## 七、端到端思维：修一个问题就把整条链路修完
 
-> *（callbackUrl 丢失问题：requireUser 丢失 → auth 页硬编码 → login API 硬编码 → register 同样）*
+callbackUrl 丢失问题：requireUser 丢失 → auth 页硬编码 → login API 硬编码 → register 同样。
 
-callbackUrl 的问题表面是 login 后跳错页，根因是整条链路——`requireUser`、`auth/page.tsx`、`api/login`、`register/page.tsx`、`api/register`——都没有正确传递这个参数。没有只修一个文件，而是把 5 个文件全部修完，同时加上 open redirect 防护。
+表面是 login 后跳错页，根因是整条链路——`requireUser`、`auth/page.tsx`、`api/login`、`register/page.tsx`、`api/register`——都没有正确传递这个参数。没有只修一个文件，而是把 5 个文件全部修完，同时加上 open redirect 防护。
 
 **原则：** 修 bug 不是"让症状消失"，是"让这条链路正确"。只修最显眼的那个文件，等于把技术债推到了下一次。端到端地追溯问题、端到端地修复，是产品长期可维护的基础。
 
@@ -88,7 +87,7 @@ callbackUrl 的问题表面是 login 后跳错页，根因是整条链路——`
 
 ## 九、文件夹迁移 = 产品组合管理意识
 
-> *"请把本地文件包夹整体迁移到 /Users/.../Documents/Products"*
+> *"请把本地文件包夹整体迁移到 /Users/.../Documents/Products。"*
 
 把 spybook 的工作目录从桌面临时位置迁移到 `Documents/Products/`，与其他产品（Gospel Hub、修仙密境、Tarot、Hylsa 等）并列管理。
 
@@ -98,17 +97,13 @@ callbackUrl 的问题表面是 login 后跳错页，根因是整条链路——`
 
 ## 十、单连接 = 单一事实来源：代码架构反映产品哲学
 
-> *（Task 10：把三个分散的 SQLite 连接合并为 `lib/db.ts` 单例）*
-
-三个模块各自开一个数据库连接，是技术问题，也是"谁是权威"的哲学问题。合并成一个单例后，整个系统对数据的理解统一了。
+三个模块各自开一个 SQLite 连接，是技术问题，也是"谁是权威"的哲学问题。合并成一个单例（`lib/db.ts`）后，整个系统对数据的理解统一了。
 
 **原则：** 产品里的"单一事实来源"原则不只适用于数据和文档——代码架构里也适用。每一个"两个地方各自维护同一件事"的模式，都是未来不一致的隐患。好的架构让"错的做法"变得不可能，而不只是"正确的做法"可行。
 
 ---
 
 ## 综合：spybook 项目提炼的新模式
-
-在前两个项目（修仙密境、Gospel Hub）的基础上，这个项目新增了：
 
 ```
 发现问题 → 系统清单 → 计划 → 无脑执行（全修，不挑）
@@ -130,4 +125,4 @@ callbackUrl 的问题表面是 login 后跳错页，根因是整条链路——`
 
 ---
 
-*文件基于「自书·尘封卷宗 / spybook.art」开发全程提炼 · 2026.04*
+*提炼自 Spybook 项目全过程对话 · 2026-04*
