@@ -1,3 +1,63 @@
+# 10 · Borrow Existing Cognition
+
+> **What users already know is a free asset. Borrow the memory, save innovation for places they can't see but can feel.**
+
+## Core idea
+
+When a user opens your product for the first time, their brain doesn't yet contain its manual. But their brain already has **decades of accumulated experience**: they've played games, used phones, shopped online, swiped feeds.
+
+**That experience is your free asset.**
+
+- Building a game? Pay homage to a classic → zero learning cost for old players.
+- Building a tool? Follow the interaction patterns of the category leader → users don't have to learn.
+- Building an AI product? Reference the layout of a mature product → lower cognitive load.
+
+**Save innovation for things users can't see but can feel:**
+- Response speed
+- Content quality
+- Edge-case detail
+- Persistence / cross-device capability
+
+Not for "I'm innovative" visuals/interactions that force users to relearn.
+
+## In real projects
+
+**Contra Code** —
+
+> **High homage to Contra, not 1:1 copy.**
+
+- Didn't invent gameplay, chose Contra homage → "everyone recognizes it instantly"
+- Kept the nostalgia dividend, sidestepped copyright
+- Controls follow the original (arrows to aim, space to jump, Z to shoot) → zero learning cost for returning players
+
+**Gospel Hub** — Design reference was Zapier. Not copying — **borrowing the visual dialect of "warm professionalism."** Users open it and immediately know "this is a quality tool site," no learning required.
+
+## Anti-patterns
+
+- **"Differentiate for differentiation's sake":** interactions go deliberately against intuition, every user has to learn, half leave on day one.
+- **Ignoring category-leader conventions:** search box in the bottom-right, back button pointing right — users have to think for every action.
+- **Not innovating where it matters:** UI mimicry is perfect, but content quality and response speed trail the reference product.
+
+## Thinking formula
+
+> **What do users already know?** → use that directly.  
+> **What do users hope will be better?** → *that's* where you innovate.
+
+**Two questions:**
+1. In my product, how much does a user have to learn from scratch? Can I push that below 20%?
+2. In the 20% I do innovate on — am I actually better than the reference product?
+
+## Related
+
+- [01 · Scenario-first](01-scenario-first.md)
+- [09 · Decisive & meticulous](09-decisive-and-meticulous.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 10 · 借力已有认知
 
 > **用户已有的记忆和经验是免费资产。能蹭的认知就蹭，创新留给用户看不到但感受得到的地方。**

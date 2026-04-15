@@ -1,3 +1,66 @@
+# 15 · Experience Before Review, Don't Trust Defaults
+
+> **Lived experience is more valuable than an imagined list of problems. AI defaults must be actively verified.**
+
+## Core idea
+
+Two ideas folded into one, because they share the same underlying logic:
+- **Experience before review:** don't worry about problems in the abstract — go use the thing, then list problems.
+- **Don't trust defaults:** AI / tool default outputs must be verified, don't assume "should be correct."
+
+**Shared logic:** don't over-simulate in your head. Ship fast and get real feedback.
+
+- No matter how good a feature sounds, you don't know where it jams until you use it
+- AI-generated links / data look real, one click might be a 404
+- "Close enough" and "actually works" are gaps only real usage reveals
+
+## In real projects
+
+**Contra Code** — Every iteration follows this rhythm:
+
+1. Ship new version
+2. Actually play for a while
+3. Report **specific** problems (often several at once)
+
+> *"人物和物品没抠图，必须抠图，火苗都抠图了，是正常的，枪械包似乎是半透明，有个透明框。"*
+
+Only playing surfaces three distinct problems at once.
+
+**Gospel Hub** — Skeptical of AI-generated content:
+
+> *"苹果、Spotify 和 YouTube 的链接都是错的和假的。"*  
+> *"我手动检查了一遍，这么多歌手的苹果和 Spotify 链接是假的。"*
+
+Required **HTTP-level verification of every link**, didn't trust search results. Stay alert to what users will actually see — one 404 destroys trust.
+
+## Anti-patterns
+
+- **Imagined problem list:** worry about "what if X happens" for hours, then ship and find the real problems were elsewhere.
+- **"If AI said so":** accept AI-given content / links as-is, no sampling.
+- **Only testing happy path:** you only click through the perfect path, skip edge cases, ship, first user goes off-path, crashes.
+- **"Works in dev" = done:** never used it in real environment / on a real device, called it done.
+
+## Thinking formula
+
+> **Have you actually used it?** → if not, don't say "should be fine."  
+> **Have you sampled and verified?** → if not, don't say "AI-generated should be correct."
+
+**Two habits:**
+1. After every "done," **act as a real user for 5 minutes**. List concrete problems, not "possible problems."
+2. For every batch of AI-generated data / content, **randomly sample 3–5 items for verification**. One wrong → re-verify the batch.
+
+## Related
+
+- [09 · Decisive & meticulous](09-decisive-and-meticulous.md)
+- [11 · Commander posture](11-commander-posture.md)
+- [13 · End-to-end fixes](13-end-to-end-fixes.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 15 · 先用再评，不信任默认
 
 > **真实体验比想象中的问题清单更有价值。AI 的默认输出必须主动验证。**

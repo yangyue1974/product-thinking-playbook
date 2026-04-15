@@ -1,3 +1,62 @@
+# 08 · Infrastructure Mindset — Restraint
+
+> **Infrastructure-class products earn their value through reliability, simplicity, and being embeddable. Don't do end-user-product things just because "you can."**
+
+## Core idea
+
+Every tool / infrastructure product faces the same temptation: **reach down into more "user-friendly" surface area, reach up into more "complete" features**. Most products die walking this path.
+
+Infrastructure quality comes from restraint:
+- An audio library service doesn't do recommendations (that's an end-user product's job)
+- A developer API doesn't do community (that's a forum's job)
+- A content aggregator doesn't do comments (that's a social product's job)
+
+**Benefits of restraint:**
+1. Focus → core quality is high
+2. Clear boundary → users know what to come here for and what not to
+3. Reusability → you can be embedded by other products
+
+**Restraint isn't laziness.** It's **continually answering "is this mine to do?"** and being willing to accept "no — we stop here."
+
+## In real projects
+
+**AudioLib** —
+
+> *"This is not a music product. This is not a recommendation product.  
+> This is a library-based audio service."*
+
+Every new idea had to answer one question first: **is this what an infrastructure product should do?** If not — don't build it, even though you "could."
+
+**Gospel Hub** — An aggregator, but no comments, no donations (phase 1), no user registration. Single job: "information centralization."
+
+## Anti-patterns
+
+- **"We could also do a…"** — every competitor feature gets copied in, and positioning blurs.
+- **Half-built user-product features:** an infrastructure adds a comment section but no moderation, no notifications — it becomes spam.
+- **Adding because it's simple:** a feature takes one line of code, but it doesn't belong. *Easy* is not a reason to build.
+
+## Thinking formula
+
+> **Is this mine to do?**  
+> No? Don't do it. Even if it's "easy."
+
+**Three self-checks:**
+1. Does this feature belong to my product's positioning? Or to an upstream / downstream product?
+2. If another product does this well already, what value does my crude version add?
+3. With this feature added, does my core function get diluted?
+
+## Related
+
+- [05 · Subtract, don't add](05-subtraction-over-addition.md)
+- [07 · Product boundary](07-product-boundary.md)
+- [20 · Distribution is part of the product](20-distribution-is-product.md)
+
+## Case studies
+
+[AudioLib](../case-studies/audiolib.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 08 · 克制：不是基础设施该做的，别做
 
 > **基础设施产品的价值在于可靠、简洁、可接入。不要因为"可以做"就去做用户产品的事。**

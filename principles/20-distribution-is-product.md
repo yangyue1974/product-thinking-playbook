@@ -1,3 +1,94 @@
+# 20 · Distribution Is Part of the Product
+
+> **"Works" isn't the end. "Users can actually use it" is. Done ≠ good. Good ≠ reached.**
+
+## Core idea
+
+Many indie builders split the process into **"build the product"** + **"figure out distribution later."** This bifurcation leaves the product in a vacuum post-launch — no domain, no channel, no onboarding, no brand.
+
+**Distribution is part of the product.** Reserve its place at design time, execute at the right moment.
+
+Sub-principles:
+
+### 20.1 · Timing of distribution awareness
+
+**Not at the start — not at the end. At the moment MVP is stable and you're ready to promote.**
+
+> *"现在我们来解决如何让用户最简单安装的问题。"* (Contra Code)
+
+### 20.2 · Manual → automated rhythm
+
+**Ship first, polish later.** The manual process itself is **defining the rules and boundaries for automation**. Don't waste energy on immature tools — wait for them to mature, then adopt.
+
+> *"别折腾了，定时任务以后再搞。"* (Gospel Hub)
+
+Meanwhile, **leave hooks for future automation** — optional fields in DB schema, a manual-entry admin UI, etc.
+
+### 20.3 · Brand domain is the anchor of product identity
+
+Buy and configure the brand domain at the validation stage, not at "official launch":
+
+> *"我为这个产品在 godaddy 买了一个域名 xianxia.cc。"* (Xianxia)
+
+The domain itself is a product decision — **short, precise, category-resonant**. `xianxia.cc` and `myapp-v2-final.vercel.app` represent different identities from day one.
+
+### 20.4 · Cost & dependency prudence
+
+**Every paid feature: is there a free equivalent?** Use existing assets where you can, but don't force an ill-fitting tool just because you've paid for it. Willing to pay for "peace of mind," not for "coolness."
+
+### 20.5 · The folder is the first layer of product portfolio
+
+Desktop is temporary storage. `Products/` is a portfolio. Managing your product folders coherently reflects treating each product as an independent entity — not "whatever I'm busy with."
+
+> *"请把本地文件夹整体迁移到 /Users/.../Documents/Products"* (Xianxia / Spybook)
+
+### 20.6 · Infrastructure added on a "useful-then-add" cadence
+
+Donation button only after users feel the site is valuable. Analytics only after domain + some traffic. PWA-ization / desktop icon after the product is "formalized." **Each stage cares about different things.**
+
+## In real projects
+
+**Gospel Hub** distribution cadence:
+1. Core 3 modules first (artists / releases / tours)
+2. Data populated → design polish
+3. Content present → custom domain
+4. Domain present → Analytics
+5. Trust built → donation entry
+6. Finally → PWA + desktop icon
+
+**Contra Code** — Proactively raised "how to make install easiest" once the feature was stable. Timing: not too early (no MVP yet), not too late (already launched).
+
+## Anti-patterns
+
+- **Launch and immediately chase traffic:** no domain, no brand — the traffic you pull in doesn't stick.
+- **Obsess over distribution before MVP:** no product yet, but you're already asking "how to promote" — misplaced energy.
+- **Non-prudent paid features:** pay for everything you see, no thought about alternatives.
+- **Desktop chaos:** all projects on the desktop, no portfolio sense.
+
+## Thinking formula
+
+> **Done ≠ good. Good ≠ reached.**  
+> What stage am I in? Is distribution the right next move?
+
+**Rhythm:**
+1. Spec done → buy domain ("give the product an identity")
+2. MVP works → think distribution ("how do strangers see it, use it")
+3. Users retaining → add analytics (where from, how long they stay)
+4. Trust built → add paid / donation / subscription
+5. Steady state → manual becomes automated
+
+## Related
+
+- [02 · Spec before code](02-spec-before-code.md)
+- [08 · Infrastructure mindset](08-infrastructure-mindset.md)
+- [17 · Core metric bound to real engagement](17-real-engagement-metrics.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [Gospel Hub](../case-studies/gospel-hub.md) · [Xianxia](../case-studies/xianxia.md) · [Spybook](../case-studies/spybook.md)
+
+---
+
 # 20 · 分发是产品的一部分
 
 > **产品不是"能运行"就结束，"用户能用上"才是完成。做完 ≠ 做好，做好 ≠ 用得到。**

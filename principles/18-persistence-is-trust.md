@@ -1,3 +1,59 @@
+# 18 · Persistence Is the Foundation of Trust
+
+> **What a user invested in your product, your product has a duty to remember. Persistence isn't an engineering question — it's a product promise.**
+
+## Core idea
+
+Every user interaction is an **investment**:
+- Time invested: 10 minutes walking through a conversation
+- Content invested: telling the product their background, context, question
+- Emotion invested: revealing something of their state in dialogue
+
+**The product has a duty to remember these investments.** The moment a user realizes "the AI forgot what I just said" or "my last record is gone" — **trust collapses on the spot**. The user will not say it a second time. They simply decide this product isn't worth the investment.
+
+**The granularity of persistence** isn't an engineering question — it's a product promise:
+- Promised a "consult" → promise to remember what was said before
+- Promised "continue reading" → promise to remember where they stopped
+- Promised "my XX" → promise it's theirs, still there when they come back
+
+## In real projects
+
+**Tarot** — Conversation records weren't saved. Reopening a past reading, chat content was gone.
+
+> *"用户把他们思考过的东西告诉了产品，产品忘记了。这不是一个技术 bug，这是信任损耗。用户不会再说第二遍的。"*
+
+**Tarot** — Related principle: **user behavior is continuous, not discrete.**
+
+Engineering defaulted to treating each "draw again" as independent (clear context, start fresh). Wrong. The user came for a **cumulative consultation**, not multiple **discrete queries**. Persistence granularity must serve the "consultation" behavior unit, not the "query" unit.
+
+## Anti-patterns
+
+- **Every session starts fresh context:** AI forgot what the user said.
+- **Refresh loses everything:** mid-operation, network hiccup, gone.
+- **"Only saved if logged in" as excuse:** many light-interaction products can use localStorage / anonymous ID to save first, bind on signup. Let "try first" and "keep data" coexist.
+- **No cross-device sync:** user typed a bunch on phone, switches to laptop, all gone.
+
+## Thinking formula
+
+> What did the user **invest** at this step?  
+> Next time they open it, what do they **expect to still be there**?
+
+**Two self-checks:**
+1. Of the things users do in my product, which must be remembered? At what granularity?
+2. If a piece of information disappeared, would the user react with "no big deal" or "this product is trash"? If the latter — it must be persisted.
+
+## Related
+
+- [17 · Core metric bound to real engagement](17-real-engagement-metrics.md)
+- [19 · Cross-platform parity + honest permissions](19-honest-parity.md)
+- [07 · Product boundary](07-product-boundary.md)
+
+## Case studies
+
+[Tarot](../case-studies/tarot.md)
+
+---
+
 # 18 · 持久化 = 信任基础
 
 > **用户对产品的投入，产品有义务记住。持久化不是工程问题，是产品承诺问题。**

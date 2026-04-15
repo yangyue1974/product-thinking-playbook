@@ -1,3 +1,62 @@
+# 19 · Cross-Platform Parity + Honest Permissions
+
+> **Platform differences should show up in interaction style, not in feature presence. System boundaries should be clear — users need to know what they can and can't do.**
+
+## Core idea
+
+Two ideas folded together because both are about **being honest with users**:
+
+**Cross-platform parity:** same product, desktop and mobile, should have **the same features**. Differences should show only in **interaction style** (swipe vs right-click, fullscreen vs modal).
+- ❌ Delete works on mobile, missing on desktop → users feel the product is incomplete
+- ✅ Swipe-to-delete on mobile, hover-to-reveal-delete on desktop → different interaction, same feature
+
+**Honest permissions:** when a user doesn't have permission, **tell them**. Don't silently redirect, don't show an empty page.
+- ❌ Non-admin enters backend → redirect to home (user bewildered)
+- ❌ Not-logged-in views content → empty list (thinks there's nothing)
+- ✅ Non-admin enters backend → **explicit 403**
+- ✅ Not-logged-in views content → "Login to see"
+
+System boundaries should be clear — users need to know: **where they are, what they can do, what they can't.** Fuzzy permission feedback creates a trust crisis — users start wondering if they did something wrong.
+
+## In real projects
+
+**Tarot** — Mobile had swipe-to-delete; desktop didn't. Fix direction:
+
+> *"桌面用户不应该因为使用的是桌面端，就缺失一个功能。功能完整性不应该因为平台而打折。"*
+
+Desktop got a hover-triggered delete button — **different interaction, same feature**.
+
+**Tarot** — Admin backend:
+
+> *"非管理员登录后，要明确显示 403，而不是悄悄跳走或者显示空页面。"*
+
+## Anti-patterns
+
+- **"Mobile is used more, skip desktop":** cutting features instead of adapting interaction.
+- **Permission errors as 404:** user thinks it's a bug.
+- **Silently empty data when not logged in:** user stares at empty page thinking "why is there nothing."
+- **No reason given for permission error:** just "you don't have access" — user doesn't know *what* access they need.
+
+## Thinking formula
+
+> **Same action, across platforms — can the user do it everywhere?**  
+> **When they can't, have I honestly told them?**
+
+**Two self-checks:**
+1. List the 10 main features of my product. Do they all work on desktop / mobile / tablet? Where they don't — is it because the interaction doesn't translate, or because I didn't build it?
+2. When users hit a "wrong" page — do they **know what they should do**? Or are they just confused?
+
+## Related
+
+- [07 · Product boundary](07-product-boundary.md)
+- [18 · Persistence is trust](18-persistence-is-trust.md)
+
+## Case studies
+
+[Tarot](../case-studies/tarot.md)
+
+---
+
 # 19 · 跨端一致 + 权限诚实
 
 > **端的差异应该体现在交互方式上，不是功能有无上。系统边界要清晰，用户需要知道他们能做什么、不能做什么。**

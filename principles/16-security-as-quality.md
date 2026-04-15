@@ -1,3 +1,65 @@
+# 16 · Security = Product Quality
+
+> **Security bugs aren't "for later." They're the product problem you have right now. Once user accounts, data, or sessions leak, trust is gone.**
+
+## Core idea
+
+Many indie builders treat security as optional — **"ship first, patch when there are users."** This is wrong:
+
+1. Security bugs and feature bugs have **the same fix cost** (both are code changes)
+2. Security bugs have **vastly greater incident cost** (one leak = zero trust)
+3. "Patch after shipping" means **user data is exposed to risk the whole time**
+
+**Put security bugs in the same fix queue as feature bugs. Don't prioritize-away.**
+
+**Proactive audit** beats reactive patching. *Not having found problems ≠ no problems.* Post-launch peace of mind comes from "I audited," not "I feel it's fine." Make audit a standard pre-release step, not optional.
+
+## In real projects
+
+**Spybook** — Code audit surfaced 14 issues — security (timing attack, open redirect, error message leakage), functionality (callbackUrl loss, SQL injection risk), performance (O(n) queries).
+
+No debate about "which are worth fixing." No "ship first, worry later." Just:
+
+> *"全部都要修，你按计划步骤做吧。"*
+
+**Xianxia** —
+
+> *"自动审核整个程序并修复 bug。"*
+
+After completing a phase, proactively request a full code audit instead of waiting for problems to surface.
+
+## Anti-patterns
+
+- **"Small product won't get attacked":** most attacks are automated scans, they don't care about size.
+- **"Patch when there are users":** "when there are users" = trading their account risk for your time.
+- **Exception message leakage:** returning error stacks to the frontend hands your DB schema to an attacker.
+- **Hardcoded redirect URLs:** open redirect waiting to happen, default accepts everything.
+- **No rate limit:** login endpoint allows unlimited password attempts.
+
+## Thinking formula
+
+> **Security bugs and feature bugs share the same queue in my workflow.**  
+> **Audit proactively pre-launch, don't wait for reactive fixes.**
+
+**Pre-release checklist (minimum):**
+1. **Auth:** timing-safe password comparison, session management correct
+2. **Injection:** parameterized SQL, user input not interpolated
+3. **Redirects:** open-redirect protection
+4. **Errors:** error messages don't leak internal structure
+5. **Rate limit:** critical endpoints (login, API calls) have throttling
+6. **Sensitive data:** logs don't print passwords / tokens
+
+## Related
+
+- [09 · Decisive & meticulous](09-decisive-and-meticulous.md)
+- [13 · End-to-end fixes](13-end-to-end-fixes.md)
+
+## Case studies
+
+[Spybook](../case-studies/spybook.md) · [Xianxia](../case-studies/xianxia.md)
+
+---
+
 # 16 · 安全 = 产品品质
 
 > **安全漏洞不是"以后的事"，是当下的产品问题。用户的账号、数据、会话一旦出问题，产品信任就崩了。**

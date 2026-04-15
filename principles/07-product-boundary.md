@@ -1,3 +1,57 @@
+# 07 · Product Boundary = User's Decision Path
+
+> **Every feature should do one thing, clearly. Features with fuzzy boundaries force users to guess.**
+
+## Core idea
+
+A product's boundary isn't drawn in the user manual. It's drawn **before every click** a user makes. Each feature should answer one question cleanly in the user's head: **"what will pressing this do?"**
+
+- "Draw again" = continue the current reading / or switch topics?
+- "Back" = back to previous page / or exit session?
+- "Delete" = soft delete / or permanent?
+
+Once a boundary is fuzzy, every action carries uncertainty — and trust erodes quietly.
+
+**Clear boundaries come from clear understanding of the user's decision path**, not from "what this button can technically do."
+
+## In real projects
+
+**Tarot** — The AI suggested "draw again" in conversation; the next reading completely ignored prior context. Engineering read this as an implementation problem. Product defined it as a **design error**:
+
+> *"'再次抽牌' is for going deeper into the current reading, not for switching to a new topic. If the user wants to consult something else, they should start a new session. That's the product boundary."*
+
+Once clarified, "draw again" had a crisp boundary: **deeper, not sideways**.
+
+**Xianxia** — Auto-starting Arc 2 is a good mechanism, but it shouldn't be the only exit. Different users have different intent, so a third option — *"Return to shelf · start a new saga"* — was added. But **auto-continue remained the default path**; user choice is the "escape hatch," not a replacement for the main road. Primary vs. secondary is clear → boundary is clear.
+
+## Anti-patterns
+
+- **Fuzzy semantics:** one button doing several things, context-dependent.
+- **No escape hatch:** user went wrong, can't get back.
+- **Unclear defaults:** no explicit action, but system did something "for them" without telling.
+- **Over-confirming:** every node pops "are you sure?" — this isn't respecting choice, it's dodging decisions.
+
+## Thinking formula
+
+> Before a user clicks — **what question is in their head?**  
+> Does my feature **answer exactly that question**?
+
+**Two checks:**
+1. Same button, different users — do they expect different things? If yes, split it.
+2. For a feature: which is the "default path" and which is the "escape hatch"? Any conflict between them?
+
+## Related
+
+- [05 · Subtract, don't add](05-subtraction-over-addition.md)
+- [14 · Design error vs execution error](14-design-vs-execution-error.md)
+- [19 · Cross-platform parity + honest permissions](19-honest-parity.md)
+
+## Case studies
+
+[Tarot](../case-studies/tarot.md) · [Xianxia](../case-studies/xianxia.md)
+
+---
+
 # 07 · 产品边界 = 用户决策路径
 
 > **每个功能都应该只做一件事，做清楚。边界模糊的功能，用户就要靠猜来使用。**

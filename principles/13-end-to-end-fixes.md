@@ -1,3 +1,66 @@
+# 13 · End-to-End Fixes, Not Surface Patches
+
+> **Fixing a bug isn't "making the symptom disappear." It's "making the path correct."**
+
+## Core idea
+
+Most bugs are not standalone events — they're **the visible symptom of several places on the same path being broken simultaneously**. Fixing only the visible one pushes the rest onto the next round.
+
+Take "wrong redirect after login" as an example — on the surface, one file issue. Trace it, and you may find:
+- `requireUser` drops the param
+- auth page hardcodes the redirect
+- `/api/login` hardcodes the redirect
+- `/api/register` hardcodes the same
+- No open-redirect protection
+
+**Fix only the auth page → symptom gone.** But the rest of the path stays broken — it'll re-emerge as a different symptom next time.
+
+**End-to-end fix:**
+1. Trace the bug to its **root cause**, don't stop at the surface
+2. Fix the **entire path**, not just the symptom location
+3. While you're there, add **the protections that should have been there** (e.g., open-redirect guard)
+
+## In real projects
+
+**Spybook** — callbackUrl loss: surface was the wrong post-login redirect; root cause was the entire path — `requireUser`, `auth/page.tsx`, `api/login`, `register/page.tsx`, `api/register` — **none passed the param correctly**.
+
+The fix didn't touch only one file — **all 5 files were fixed, plus open-redirect protection added.**
+
+**Tarot** — AI replies kept truncating mid-sentence. Users thought the AI was being curt; the actual cause was `max_tokens` set too low.
+
+> **The UI surface sits on top of a logic constraint, which sits on top of an infrastructure parameter.**
+
+Diagnose experience problems down to the root, don't just patch the surface.
+
+## Anti-patterns
+
+- **Symptom → fix → done:** if the symptom goes away, you call it fixed.
+- **Afraid of bigger changes:** you know the path has more issues, but "this time let's leave it, next time" — next time never comes.
+- **No protection added:** only fix the specific bug, skip the related guardrails.
+- **No regression sweep:** fix this bug, don't check if the same root cause triggers other bugs.
+
+## Thinking formula
+
+> Before fixing, ask:  
+> **Are there other broken points upstream? Will the same root cause surface again downstream?**
+
+**Three steps:**
+1. Symptom → trace to root cause
+2. Sweep the **entire path** from root to symptom for the same class of issue
+3. Fix it all at once + add related protections
+
+## Related
+
+- [14 · Design error vs execution error](14-design-vs-execution-error.md)
+- [15 · Experience before review](15-experience-before-review.md)
+- [16 · Security = product quality](16-security-as-quality.md)
+
+## Case studies
+
+[Spybook](../case-studies/spybook.md) · [Tarot](../case-studies/tarot.md)
+
+---
+
 # 13 · 端到端修复，不修表面
 
 > **修 bug 不是"让症状消失"，是"让这条链路正确"。**

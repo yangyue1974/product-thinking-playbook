@@ -1,3 +1,61 @@
+# 04 · Subtitle as Promise, Not Description
+
+> **The subtitle is the first complete sentence your product says to the user. It's not describing features — it's conveying a promise, an invitation, an identity.**
+
+## Core idea
+
+The product name is a word. The subtitle is a sentence. Don't waste it on **description** — users don't care which category you belong to (that's the "category fill-in-the-blank" trap). What they care about is **"what can I become by using this?"**
+
+A strong subtitle is not replaceable:
+- ❌ Descriptive: "An AI-powered XX tool"
+- ❌ Feature-list: "Helps you quickly generate XX"
+- ✅ Promise: "Forge your own legendary XX"
+- ✅ Invitation: "Begin your first XX"
+
+**Say "what you can become," not "what you'll get."**
+
+## In real projects
+
+**Xianxia** — One character changed, direction completely flipped:
+
+> **"读一部属于你的修仙密境"** → **"成就你自己的仙侠传奇"**  
+> *("Read an immortal-sect realm of your own" → "Forge your own Xianxia legend")*
+
+The former: *you consume*. The latter: *you create*. That one edit turned the value proposition from a passive "reading product" into an active "self-realization tool."
+
+**Spybook** — The same kind of attention applied to the domain:
+
+> *"域名说错了，是 spybook.art"*（not spybook.cc）
+
+`.art` is not `.cc` — the domain is also a declaration of "who I am." The precision with which you care about every character the user can see is how product consciousness shows up.
+
+## Anti-patterns
+
+- **Feature list:** subtitle reads "An AI assistant supporting X, Y, Z."
+- **Adjective pile-up:** "Powerful, intelligent, easy-to-use XX" — says everything, means nothing.
+- **Technical jargon:** putting implementation details in the pitch ("Transformer-powered XX").
+- **Subtitle disconnected from core proposition:** homepage says "efficiency tool," subtitle says "revolutionary product" — users immediately smell the seam.
+
+## Thinking formula
+
+> Does my subtitle make the user imagine **"what I became"**?  
+> If not, it's a description — not a promise.
+
+**One test:** read the subtitle aloud. Are you moved? If not, neither will users be.
+
+**Inverse test:** flip it to "I won't give you…" — if the negative version reads clearer than the positive, the original is too weak.
+
+## Related
+
+- [03 · Aesthetic as stance](03-aesthetic-as-stance.md)
+- [07 · Product boundary](07-product-boundary.md)
+
+## Case studies
+
+[Xianxia](../case-studies/xianxia.md) · [Spybook](../case-studies/spybook.md)
+
+---
+
 # 04 · 副标题是承诺，不是描述
 
 > **副标题是产品对用户说的第一句完整的话。它不是在描述功能，而是在传递承诺、邀请、身份认同。**

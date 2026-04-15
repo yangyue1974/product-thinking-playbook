@@ -1,3 +1,66 @@
+# 17 · Core Metric Bound to Real Engagement
+
+> **Whether the product is working should be answerable by one question. Finding that one question is worth more than stacking a hundred metrics.**
+
+## Core idea
+
+Most products stare at the wrong numbers: registrations, DAU, PV, UV. Those only show that the product has been **opened** — not that it **held** the user.
+
+The metric that reflects real product health is typically **a behavior the user had to pay a cost to perform**.
+
+For example:
+- Content product → what chapter did the user reach / what minute did they listen to
+- Tool product → did the user open it a 3rd time / make their first payment
+- Community product → did the user post their first content / reply to someone
+
+That metric must directly answer: **"is my product actually working?"**
+
+Find it → the admin dashboard becomes meaningful. Don't find it → no amount of data is signal.
+
+## In real projects
+
+**Spybook** — The core metric is **last_read_chapter** (which chapter each user reached). One field directly answers "is the content gripping?"
+
+Further: **arc_done** (reached chapter 15) as the threshold for "real engagement," **distinct from "opened."**
+
+> *"比如我希望能看到每个用户到了第几章，这样我才知道我的产品是否真的受欢迎。"*
+
+**Xianxia** — Same logic:
+
+> *"我才知道我的产品是否真的受欢迎。"*
+
+Not "user count" / "PV/UV" style generic metrics — **which chapter each user reached** directly reflects whether the content is gripping, whether the user is truly engaged.
+
+**Supporting principle** — When existing data is enough, don't add new tools. The data is in SQLite, all metrics are SQL queries away. No need to bring in Metabase / PostHog. An `/admin` page in the app reads the DB directly.
+
+**Supporting principle** — Minimalism for admin tools. Internal tools don't need to be "product-ized" — audience is just you. Hidden URL + single admin account + 404 for everyone else. Put the effort into data accuracy and metric clarity.
+
+## Anti-patterns
+
+- **Tracking registrations / DAU:** doesn't reflect real usage depth. A user opening for 30 seconds vs. 30 minutes a day is worlds apart.
+- **Integrating analytics SDK before launch:** data model isn't stable, events pile up messy.
+- **No "real engagement" threshold:** count "ever opened" as success.
+- **Product-izing the admin panel:** spend days building login / permissions / menus / design — for a tool you alone will use.
+
+## Thinking formula
+
+> **Can one number tell me whether my product is succeeding?**  
+> Is that number about "opens," or "real engagement"?
+
+**One test:** if you could only see *one* number to judge whether the product is working, what would it be? Can't name it → product positioning isn't clear yet.
+
+## Related
+
+- [01 · Scenario-first](01-scenario-first.md)
+- [04 · Subtitle as promise](04-subtitle-as-promise.md)
+- [18 · Persistence is trust](18-persistence-is-trust.md)
+
+## Case studies
+
+[Spybook](../case-studies/spybook.md) · [Xianxia](../case-studies/xianxia.md)
+
+---
+
 # 17 · 核心指标绑定真实投入
 
 > **知道产品是否成功，只需要一个问题的答案。找到那个问题，比堆一百个指标都重要。**

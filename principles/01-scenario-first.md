@@ -1,3 +1,58 @@
+# 01 · Scenario-First
+
+> **Good products start from observing a real scenario — not from a feature list.**
+
+## Core idea
+
+Most products don't fail because they lacked features. They fail because the features didn't fit a real scenario. Describe — in one concrete sentence — **the situation the user is in, the posture they use your product in, and the emotion they carry** when they open it. The feature set will then fall out naturally, and most of it will be cut.
+
+A scenario isn't a vague persona ("young urban professionals"). It's a sentence specific enough to picture:
+
+> *"Programmers have a lot of dead time while waiting on builds, and it's boring."*
+
+From that one line, these all drop out:
+- Players won't invest long stretches → **no levels, no weapon upgrades**
+- Players get yanked back to work any second → **respawn in place**
+- Visuals must not intrude on the editor → **bottom overlay**
+- Keys can't collide with the IDE → **focus-switching mechanism**
+
+## In real projects
+
+**Contra Code** — The entire project started from one scenario sentence, and every downstream decision was re-checked against it:
+
+> *"我们在 Coding 的时候都有大量的等待时间非常无聊，这个场景是一个真实的需求。"*
+
+When someone else made a Super Mario overlay, the reaction wasn't "cool" — it was "this is a real, under-served scenario."
+
+**Gospel Hub** — The core value was nailed down first: *"Information centralization — take wildly scattered information and bring it to one place."* The scenario is "a Gospel music fan bouncing between YouTube, Spotify, Apple Music, and tour sites." The product form — an aggregator — falls out of the scenario.
+
+## Anti-patterns
+
+- **Feature-driven:** "I want to build an XX with AI + social + gamification." Each noun is a feature, none is a scenario.
+- **Audience-driven:** "I want to build for Gen Z." An audience isn't a scenario — the same person is a different user at different moments.
+- **Tech-driven:** "AI is hot, let me build something with AI." Tools-first, not needs-first.
+
+## Thinking formula
+
+> Don't ask "is this feature good?" — ask "what does this scenario actually look like?"
+
+**Three self-checks:**
+1. Can I describe, in one sentence, the scenario my user is in?
+2. Is that scenario real? Am I someone who lives in it?
+3. Can every feature be derived from that scenario? The ones that can't — can they be cut?
+
+## Related
+
+- [05 · Subtract, don't add](05-subtraction-over-addition.md) — scenario is the yardstick
+- [07 · Product boundary = user's decision path](07-product-boundary.md)
+- [12 · Content standards > technical standards](12-content-standards-first.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 01 · 场景先于功能
 
 > **好产品从观察真实场景开始，不是从功能列表开始。**

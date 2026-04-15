@@ -1,3 +1,64 @@
+# 06 · Vision Non-Negotiable, Implementation Flexible
+
+> **Implementation can be renegotiated. The product vision cannot be downgraded.**
+
+## Core idea
+
+When working with AI or engineering, the most dangerous pattern is: **"Technically hard to do" → "Then let's simplify" → the product's core value quietly dilutes.**
+
+This is the deadliest trap, because every step sounds reasonable:
+- Engineer says "can't be done" → drop one level → still works → seems OK
+
+But "still works" ≠ "hit the target." Once the vision is downgraded, there's no coming back — you've started compounding on a wrong direction.
+
+**The correct posture:**
+- Vision is the **non-negotiable floor**
+- Implementation is **fully open to negotiation** — stack, architecture, approach
+- If current tools can't do it, ask "how long until they can," not "should we give up"
+
+## In real projects
+
+**Contra Code** — I shipped the game as a standalone Tab. User pushback:
+
+> *"这和我想的不一样，跟他们在旁边开一个挖地雷有什么区别。"*
+
+The weight of this line:
+- They knew the original intent was "don't interrupt coding"
+- Tab mode let them play, but lost the core value proposition
+- They didn't accept a downgrade just because "tech said so"
+
+Result: kept pushing on DOM injection → landed on bottom panel (compromised on implementation, but **kept "doesn't occupy the editor" as the core intent**).
+
+**Xianxia** — On the mechanic "Chapter 15 writes straight through, no mid-way prompt," engineering wanted a "friendly prompt," but that would shatter the "immersive reading" vision. So engineering was paused until vision was confirmed.
+
+## Anti-patterns
+
+- **Technical difficulty used to kill vision:** "Can't do this, let's skip it" — "can't" is an implementation issue, not a reason to cancel vision.
+- **"Users won't notice anyway"** — what users don't perceive is detail difference, not value difference.
+- **Serial concessions:** give an inch here, an inch there, and by the end this isn't the product you wanted.
+
+## Thinking formula
+
+> When hearing "we can't do it," don't ask **"can we skip it."**  
+> Ask **"can we do it a different way."**
+
+**Three layers:**
+- **Vision layer** (value proposition) → no compromise
+- **Feature layer** (product form) → compromise carefully
+- **Implementation layer** (technical approach) → compromise freely
+
+## Related
+
+- [02 · Spec before code](02-spec-before-code.md) — spec anchors the vision
+- [11 · Commander posture](11-commander-posture.md)
+- [14 · Design error vs execution error](14-design-vs-execution-error.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [Xianxia](../case-studies/xianxia.md) · [Tarot](../case-studies/tarot.md)
+
+---
+
 # 06 · 愿景不妥协，实现可妥协
 
 > **实现方案可以谈判，产品愿景不能让步。**

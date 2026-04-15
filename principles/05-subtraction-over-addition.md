@@ -1,3 +1,62 @@
+# 05 · Subtract, Don't Add
+
+> **Features aren't better because there are more of them. They're better because they fit the scenario more tightly.**
+
+## Core idea
+
+Most feature creep isn't because you "wanted to add" — it's because you didn't have **a yardstick for cutting**. With a scenario as the yardstick, subtraction becomes natural:
+
+| Cut | Reason |
+|---|---|
+| Weapon upgrades | Programmers won't play long enough |
+| Level progression | Doesn't fit the scenario |
+| User registration | Adds friction to first use |
+| Recommendation algorithm | This isn't a recommendation product |
+| Comments / social | Not in v1 |
+
+**Every time you're about to add a feature, ask:** does the user — in this scenario — have the patience for this? Are they willing to spend one extra step?
+
+This applies beyond MVP. At every stage, before adding, ask: am I serving the scenario, or escaping boredom?
+
+## In real projects
+
+**Contra Code** — When defining gameplay, subtraction came first: cut weapon upgrades, levels, complex plot, registration; keep score-based challenges, in-place respawn, anonymous leaderboards.
+
+**AudioLib** —
+
+> *"This is not a music product. This is not a recommendation product. This is a library-based audio service."*
+
+This **restrained self-definition** prevented feature bloat. Every new idea had to pass one question: is this what an infrastructure product should do?
+
+**Gospel Hub** — Phase 1 explicit exclusions: user accounts / comments / donations / agent-based scraping. **The "not doing" list is as important as the "doing" list.**
+
+## Anti-patterns
+
+- **"Do a little of everything"**: afraid of missing a need, you add a bit of each — and none of it is great.
+- **Cargo-cult additions**: the competitor added search, you add search. Their scenario isn't yours.
+- **Monetization and social before MVP**: core flow isn't proven yet, but you've already stacked on payment walls / social / points.
+
+## Thinking formula
+
+> **Use scenario to reverse-derive what NOT to do, not a feature list to forward-enumerate what to do.**
+
+**Three questions before adding:**
+1. In my scenario, does the user have patience for this?
+2. Without this feature, does the core value suffer? If not, don't add yet.
+3. If this feature is to be done well, what else comes with it? (Login usually drags in user management, password reset, email service…)
+
+## Related
+
+- [01 · Scenario-first](01-scenario-first.md) — scenario is the yardstick
+- [07 · Product boundary](07-product-boundary.md)
+- [08 · Infrastructure mindset](08-infrastructure-mindset.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [AudioLib](../case-studies/audiolib.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 05 · 做减法而非加法
 
 > **功能不是加得越多越好，而是越贴合场景越好。**

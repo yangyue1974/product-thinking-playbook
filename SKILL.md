@@ -5,95 +5,108 @@ description: A decision-making playbook for solo product builders. 20 principles
 
 # Product Thinking Playbook
 
-> 一套给独立开发者 / 产品人的判断框架。  
-> 不是"产品经理手册"，是把"做决策的那一刻在想什么"写下来。
+> A judgment framework for indie developers and product people.  
+> Not a "product manager handbook" — a record of what's actually going through your head *in the moment* you make a call.  
+> 一套给独立开发者 / 产品人的判断框架。不是"产品经理手册"，是把"做决策的那一刻在想什么"写下来。
 
-## 什么时候用这个 skill
+**Each principle file below is bilingual (English first, then 中文).**
 
-在以下时刻主动打开对应的原则文件阅读再做决定：
+## When to use this skill
 
-- **新产品立项** → 读 `principles/01-scenario-first.md` → `principles/02-spec-before-code.md`
-- **功能蔓延、收不住手** → 读 `principles/05-subtraction-over-addition.md`
-- **和 AI 协作写代码，感觉产品在跑偏** → 读 `principles/11-commander-posture.md`
-- **拿到一批 bug，不知道从哪下手** → 读 `principles/13-end-to-end-fixes.md` + `14-design-vs-execution-error.md`
-- **产品"能跑了"，下一步该做什么** → 读 `principles/17-real-engagement-metrics.md` + `20-distribution-is-product.md`
-- **快速查阅** → `quick-reference.md`
+Open the corresponding principle before making the call:
 
-## 五个维度
+- **Starting a new product** → `principles/01-scenario-first.md` → `principles/02-spec-before-code.md`
+- **Feature creep, can't stop adding** → `principles/05-subtraction-over-addition.md`
+- **Working with AI, product feels off** → `principles/11-commander-posture.md`
+- **Have a batch of bugs, don't know where to start** → `principles/13-end-to-end-fixes.md` + `14-design-vs-execution-error.md`
+- **Product "works" — what's next?** → `principles/17-real-engagement-metrics.md` + `20-distribution-is-product.md`
+- **Quick lookup** → `quick-reference.md`
 
-| 维度 | 回答的问题 | 对应原则 |
+新产品立项 / 功能蔓延 / 收不住手 / bug 收不住 —— 打开对应的原则文件再做决定。
+
+## Five dimensions
+
+| Dimension | Answers | Principles |
 |---|---|---|
-| **I. 立意 Intent** | 为什么存在？为谁做？ | 01–04 |
-| **II. 边界 Boundary** | 不做什么？边界在哪？ | 05–08 |
-| **III. 执行 Execution** | 怎么把判断落地？ | 09–12 |
-| **IV. 品质 Quality** | 怎么让它站得住？ | 13–16 |
-| **V. 闭环 Closed Loop** | 什么时候算做完？ | 17–20 |
+| **I. Intent 立意** | Why does it exist? For whom? | 01–04 |
+| **II. Boundary 边界** | What NOT to do? | 05–08 |
+| **III. Execution 执行** | How to ship the judgment? | 09–12 |
+| **IV. Quality 品质** | How to make it stick? | 13–16 |
+| **V. Closed Loop 闭环** | When is it "done"? | 17–20 |
 
-## 20 条原则索引
+## 20 principles · index
 
-**I. 立意**
-1. [场景先于功能](principles/01-scenario-first.md)
-2. [先定性，再动手](principles/02-spec-before-code.md)
-3. [气质即立场](principles/03-aesthetic-as-stance.md)
-4. [副标题是承诺，不是描述](principles/04-subtitle-as-promise.md)
+**I. Intent 立意**
+1. [Scenario-first · 场景先于功能](principles/01-scenario-first.md)
+2. [Spec before code · 先定性，再动手](principles/02-spec-before-code.md)
+3. [Aesthetic as stance · 气质即立场](principles/03-aesthetic-as-stance.md)
+4. [Subtitle as promise · 副标题是承诺](principles/04-subtitle-as-promise.md)
 
-**II. 边界**
-5. [做减法而非加法](principles/05-subtraction-over-addition.md)
-6. [愿景不妥协，实现可妥协](principles/06-vision-non-negotiable.md)
-7. [产品边界 = 用户决策路径](principles/07-product-boundary.md)
-8. [克制：不是基础设施该做的，别做](principles/08-infrastructure-mindset.md)
+**II. Boundary 边界**
 
-**III. 执行**
-9. [决策果断，细节挑剔](principles/09-decisive-and-meticulous.md)
-10. [借力已有认知](principles/10-borrowed-cognition.md)
-11. [指挥者姿态，不做被动执行](principles/11-commander-posture.md)
-12. [内容标准 > 技术标准（AI 产品）](principles/12-content-standards-first.md)
+5. [Subtract, don't add · 做减法而非加法](principles/05-subtraction-over-addition.md)
+6. [Vision non-negotiable · 愿景不妥协](principles/06-vision-non-negotiable.md)
+7. [Product boundary = user's decision path · 产品边界 = 用户决策路径](principles/07-product-boundary.md)
+8. [Infrastructure mindset · 克制：不是基础设施该做的别做](principles/08-infrastructure-mindset.md)
 
-**IV. 品质**
-13. [端到端修复，不修表面](principles/13-end-to-end-fixes.md)
-14. [设计错误 vs 执行错误](principles/14-design-vs-execution-error.md)
-15. [先用再评，不信任默认](principles/15-experience-before-review.md)
-16. [安全 = 产品品质](principles/16-security-as-quality.md)
+**III. Execution 执行**
 
-**V. 闭环**
-17. [核心指标绑定真实投入](principles/17-real-engagement-metrics.md)
-18. [持久化 = 信任基础](principles/18-persistence-is-trust.md)
-19. [跨端一致 + 权限诚实](principles/19-honest-parity.md)
-20. [分发是产品的一部分](principles/20-distribution-is-product.md)
+9. [Decisive & meticulous · 决策果断，细节挑剔](principles/09-decisive-and-meticulous.md)
+10. [Borrow existing cognition · 借力已有认知](principles/10-borrowed-cognition.md)
+11. [Commander posture · 指挥者姿态](principles/11-commander-posture.md)
+12. [Content standards > technical standards · 内容标准 > 技术标准](principles/12-content-standards-first.md)
 
-## 案例底座
+**IV. Quality 品质**
 
-这 20 条不是凭空写的。每一条都能在下面 6 个真实项目里找到原始对话和决策时刻：
+13. [End-to-end fixes · 端到端修复](principles/13-end-to-end-fixes.md)
+14. [Design vs execution error · 设计错误 vs 执行错误](principles/14-design-vs-execution-error.md)
+15. [Experience before review · 先用再评](principles/15-experience-before-review.md)
+16. [Security = product quality · 安全 = 产品品质](principles/16-security-as-quality.md)
 
-- [Contra Code](case-studies/contra-code.md) · VS Code 内嵌游戏浮层
-- [AudioLib](case-studies/audiolib.md) · 开发者用的音频库服务
-- [Gospel Hub](case-studies/gospel-hub.md) · 福音音乐聚合站
-- [Spybook](case-studies/spybook.md) · 互动侦探叙事小说
-- [Tarot](case-studies/tarot.md) · AI 塔罗咨询
-- [Xianxia](case-studies/xianxia.md) · AI 仙侠小说生成
+**V. Closed Loop 闭环**
 
-## 使用方式
+17. [Core metric bound to real engagement · 核心指标绑定真实投入](principles/17-real-engagement-metrics.md)
+18. [Persistence is trust · 持久化 = 信任基础](principles/18-persistence-is-trust.md)
+19. [Cross-platform parity + honest permissions · 跨端一致 + 权限诚实](principles/19-honest-parity.md)
+20. [Distribution is part of the product · 分发是产品的一部分](principles/20-distribution-is-product.md)
+
+## Case studies
+
+Every principle above is grounded in a real project. The full development conversations:
+
+- [Contra Code](case-studies/contra-code.md) · VS Code Contra overlay
+- [AudioLib](case-studies/audiolib.md) · Audio library API service
+- [Gospel Hub](case-studies/gospel-hub.md) · Gospel music aggregator
+- [Spybook](case-studies/spybook.md) · Interactive detective fiction
+- [Tarot](case-studies/tarot.md) · AI tarot consultation
+- [Xianxia](case-studies/xianxia.md) · AI xianxia novel generation
+
+## How to invoke
 
 ```
-在 Claude Code 里：
-> 用 product-thinking-playbook 帮我判断一下：
-> 现在这个功能要不要加？
+In Claude Code:
+> Using product-thinking-playbook, help me decide: should this feature go in now?
 
-在人自己脑子里：
-> 对着 quick-reference 念一遍，找"最刺痛自己"那条。
+In your own head:
+> Read through quick-reference.md, find the line that hurts most.
 ```
 
 ---
 
-## 三个核心姿态
+## Three core postures · 三个核心姿态
 
-把 20 条再压成 3 句话：
+**English:**
+> 1. **Intent stands firm:** scenario, aesthetic, vision — each clearly articulated, you'd push back on a one-character change.
+> 2. **Execution holds up:** decisive direction × meticulous detail; you're the commander, not the contractor.
+> 3. **Loop closes:** it works → it stands up to scrutiny → users can actually reach it.
 
-> **1. 立意定得住：场景、气质、愿景都能说清楚，别人改一字都不舒服。**  
-> **2. 执行扛得住：果断拍板 × 细节不放过，自己是指挥者不是乙方。**  
-> **3. 闭环做得到：能跑起来 → 经得起推敲 → 用户真的能用到。**
+**中文：**
+> 1. **立意定得住**：场景、气质、愿景都能说清楚，别人改一字都不舒服。
+> 2. **执行扛得住**：果断拍板 × 细节不放过，自己是指挥者不是乙方。
+> 3. **闭环做得到**：能跑起来 → 经得起推敲 → 用户真的能用到。
 
 ---
 
-*基于 6 个已上线产品的全过程对话提炼 · 2026.04*  
-*作者 [@yangyue1974](https://github.com/yangyue1974) · [43.group](https://43.group)*
+*Distilled from the full-process conversations of 6 shipped products · 2026-04*  
+*基于 6 个已上线产品的全过程对话提炼*  
+*Author [@yangyue1974](https://github.com/yangyue1974) · [43.group](https://43.group)*

@@ -1,3 +1,59 @@
+# 09 · Decisive on Direction, Meticulous on Detail
+
+> **Lock the big direction fast. Polish the small details relentlessly.**
+
+## Core idea
+
+Product decisions split into two kinds:
+- **Direction decisions:** A vs B path, product name, which user segment. These **should be locked fast** — if two options are roughly equivalent, picking either one is fine. The nagging itself is the cost.
+- **Experience decisions:** button sizes, spacing, copy tone, image ratios. These **cannot be let go** — every "off-ness" the user perceives is a points-off.
+
+The worst posture is the **inversion**: agonize over direction ("A or B?"), wave through details ("good enough, ship it").
+
+**Decisive and meticulous aren't in tension** — they come from the same thing: **an internal standard for overall product quality**. The standard is held in your head; direction isn't fuzzy, details don't slip.
+
+## In real projects
+
+**Contra Code** — **Decisive moments:**
+- "Contra Code — that name is great" → locked in one second
+- Pick technical option "1" → no agonizing
+- Commercial: "VSCode and Cursor have the most coders, do those two first, skip the rest"
+
+**Contra Code** — **Meticulous moments:**
+- Rough art: "we can't ship something this crude"
+- Boss too hard: "players lose faith in continuing"
+- Platform design: "no logic to it, we need to restructure"
+- Seams, shadow lines, cutout quality — each called out one by one
+
+**Xianxia** — Hero image went through 4 rounds, each with precise feedback: what the frame ratio should be, where the image gets cropped, whether the face stays in the visible region. **"Good enough" not accepted. Calibrate until right.**
+
+**Gospel Hub** — Detail sensitivity: "feels thin," "feels empty," "too long." **"Roughly fine" not accepted.**
+
+## Anti-patterns
+
+- **Agonize on direction, water down details:** spend a week deciding A or B, ship with misaligned spacing everywhere.
+- **Detail perfectionism that kills direction:** every pixel has to align, and three weeks pass with nothing shipped.
+- **Neither direction nor detail:** everything "roughly fine" — these products are mediocre from day one.
+
+## Thinking formula
+
+> **Direction:** pick the one that isn't wrong, move on.  
+> **Detail:** if something feels off, say it — don't let it pass.
+
+**One test:** put the screenshot on your desktop, look at it for 5 seconds. What's the first "off-ness"? That's what to fix next.
+
+## Related
+
+- [03 · Aesthetic as stance](03-aesthetic-as-stance.md) — aesthetic is built from details
+- [06 · Vision non-negotiable](06-vision-non-negotiable.md)
+- [15 · Experience before review](15-experience-before-review.md)
+
+## Case studies
+
+[Contra Code](../case-studies/contra-code.md) · [Xianxia](../case-studies/xianxia.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 09 · 决策果断，细节挑剔
 
 > **大方向快速定板，小细节反复打磨。**

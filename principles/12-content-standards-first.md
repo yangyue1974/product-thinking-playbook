@@ -1,3 +1,68 @@
+# 12 · Content Standards > Technical Standards (for AI Products)
+
+> **The moat of an AI product isn't "which model you use." It's your judgment about content quality.**
+
+## Core idea
+
+When everyone can call the same model APIs, **there's no technical differentiation** between AI products. The real gap opens up from:
+
+1. How fine-grained your content-quality standards are
+2. How much of that standard you can encode into prompt / system message / output constraints
+
+"Content standards" are much harder to define than "technical standards" — technical standards are quantifiable (response < 200ms), content standards can only be felt ("no summary sentences," "must have a sense of process").
+
+**People who can articulate content standards clearly are the ones who build AI products with actual quality.** It's a scarce kind of intuition — not an engineering skill, but a literary / aesthetic / narrative skill.
+
+This doesn't only apply to text generation:
+- Image generation: composition / lighting / texture constraints in prompts
+- Audio generation: style / mood / density constraints
+- Conversational AI: **what role does the AI play** — advisor? judge? teacher? companion?
+
+## In real projects
+
+**Xianxia** — Style constraints far more precise than technical requirements:
+
+> *"仿照《凡人修仙传》早期叙事风格…… 禁止总结句，禁止抽象评价，要求过程感，字数控制在 1800–3000 字。"*
+
+These standards directly determine the quality ceiling of the core experience. Same model, different standards, vastly different output.
+
+**Tarot** — Role definition decides everything:
+
+> *"Users come to Tarot because they're facing a question they haven't thought through. If the AI rushes to conclusions, it's interrupting their thinking, not helping."*
+
+Changing the AI from "judge" to "guide" is one line in the prompt — but it changes the soul of the product:
+- If the situation isn't clear, ask questions first — understand before advising
+- When the cards point to difficulty, focus on "what can be done next," don't linger on the problem itself
+- Acknowledge the user's judgment and feelings — understand first, then discuss; don't negate, don't overturn
+
+## Anti-patterns
+
+- **"Built on GPT-4 / Claude 4 / latest model" as a selling point:** users don't care about model versions, they care about content quality.
+- **Prompts written like manuals:** *"Please help me generate…"* — generic prompt, average output.
+- **Tuning prompts after user feedback:** launched, users said "it's boring," now you go tune. Too late.
+- **Engineers writing prompts:** get "competent but lifeless" content.
+
+## Thinking formula
+
+> AI product competitiveness = **model capability** × **your content standard**.  
+> Model capability is the same for everyone, so it's all in the second factor.
+
+**Two self-checks:**
+1. Can I list **10 clear content don'ts** (must not appear) and **10 clear content musts** (must appear)?
+2. What role is my AI playing? Can I describe that role's speech style, thinking mode, and value leanings in one paragraph?
+
+## Related
+
+- [03 · Aesthetic as stance](03-aesthetic-as-stance.md)
+- [04 · Subtitle as promise](04-subtitle-as-promise.md)
+- [11 · Commander posture](11-commander-posture.md)
+
+## Case studies
+
+[Xianxia](../case-studies/xianxia.md) · [Tarot](../case-studies/tarot.md)
+
+---
+
 # 12 · 内容标准 > 技术标准（AI 产品）
 
 > **AI 产品的护城河不在于"用了什么模型"，而在于"对内容品质的判断力"。**

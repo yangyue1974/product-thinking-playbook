@@ -1,3 +1,64 @@
+# 02 · Spec Before Code
+
+> **The product doc is upstream of engineering, not an artifact you write after shipping.**
+
+## Core idea
+
+Whether you're writing code yourself or letting an AI do it, **before the first line of code, put the product in writing**. Two documents pay off more than any other artifact:
+
+- **A product logic doc** — core value, user path, key junctions, and an explicit *"what we will NOT do"* list
+- **A technical boundary doc** — stack, data shape, module split, initial data
+
+Documents aren't valuable because they predict the future correctly. They're valuable because **they give every step an unambiguous finish line**. With a spec in hand, watching an AI write code is editing; without one, you're doing product design live in comment threads.
+
+**"Discuss first, then do"** is the corollary: before engineering (or an AI) touches anything that affects the user path, put it in words. Code can be rewritten; architectural direction, once off, is expensive to undo.
+
+## In real projects
+
+**AudioLib** — The project started with two documents: one defining product logic (*what this is NOT* + *what this IS*), one defining technical boundaries. Spec came before the repo was even created.
+
+**Xianxia** —
+
+> *"你先不要改，我们来讨论一下。"*
+
+Before confirming the core mechanic ("Chapter 15 writes straight through, no mid-way prompt"), engineering was paused. Lock the logic in language, then ship code.
+
+**Spybook** — When presented with 14 audit bugs, the response wasn't per-item debate. It was: draft the full fix plan first, then execute.
+
+> *"你按计划步骤做吧。"*
+
+Planning first lets execution be "mindless" — cognitive bandwidth goes into judgment, not real-time decisions.
+
+## Anti-patterns
+
+- **Build-then-fix:** ship a version and see, realize on day 3 the direction is wrong, start over.
+- **Doc-as-deliverable:** write docs after shipping, as compliance, never read them again.
+- **Feature list masquerading as spec:** 20 features listed, but "what we won't do", "who for", "what counts as success" — all missing.
+
+## Thinking formula
+
+> Can a complete stranger read your spec and understand:  
+> **Who this solves a problem for? The next 3 things we'll do? The things we're explicitly not doing?**
+
+**Minimum spec skeleton:**
+1. One-sentence scenario
+2. Core value (what this is NOT / what this IS)
+3. The three key junctions on the user path
+4. *"Not in v1"* list
+5. Success criterion (the minimum loop that has to work)
+
+## Related
+
+- [01 · Scenario-first](01-scenario-first.md) — spec starts from scenario
+- [06 · Vision non-negotiable](06-vision-non-negotiable.md) — the spec anchors the vision
+- [11 · Commander posture](11-commander-posture.md)
+
+## Case studies
+
+[AudioLib](../case-studies/audiolib.md) · [Xianxia](../case-studies/xianxia.md) · [Spybook](../case-studies/spybook.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 02 · 先定性，再动手
 
 > **产品文档是工程的上游，不是工程完成后的附属品。**

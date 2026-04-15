@@ -1,3 +1,63 @@
+# 11 · Commander Posture — Don't Be the Passive Executor
+
+> **AI is the executor. You are the direction-setter. Reviewing AI output is your job — not something the AI picks up on its own.**
+
+## Core idea
+
+When collaborating with AI on code, the trap is **passive execution**:
+- AI says it can → OK, do it
+- AI writes a version → OK, that's it
+
+This is handing over product decision authority. AI doesn't have your judgment about the product; it will default to what seems "most generic, most reasonable" — and "generic" is exactly why products end up bland.
+
+**Four traits of commander posture:**
+1. **Give explicit output specs**, not vague directives. *"Write 50 of the most influential US contemporary Gospel artists,"* not *"help me list some artists."*
+2. **Review and correct** — I edit the list AI gives me, I don't accept it wholesale.
+3. **Challenge AI suggestions** — don't be convinced by "the AI said so," counter-question: *"Really? Evidence?"*
+4. **Bluntly call out errors** — clear feedback is what lets AI course-correct quickly.
+
+**Commander ≠ dictator.** AI is sometimes better than you (at writing code, handling details). Let that part go. But **direction and quality standards don't get delegated.**
+
+## In real projects
+
+**Gospel Hub** —
+- Explicit output spec: *"Write 50 of the most influential US contemporary Gospel artists and bands"*
+- Review and correct (cut Vertical Worship, Todd Dulaney, Koryn Hawthorne, Sinach; added NF; later added Hope Darst)
+- Challenge AI suggestions: *"Vercel seems to need a deployment first to monitor data"*, *"this port is occupied"*
+- Direct when AI errs: *"You didn't give me code"*
+
+**Spybook** — Facing 14 bugs, no debate about "which are worth fixing." Straight:
+
+> *"全部都要修，你按计划步骤做吧。"*
+
+Classic commander posture: **direction is set, execution doesn't need discussion.**
+
+## Anti-patterns
+
+- **"Whatever AI gives, I'll use":** no review habit, trusting "AI should know what's right."
+- **Talked into it by AI confidence:** AI says *"this is usually how it's done,"* you accept. You didn't ask *"but does that really fit my scenario?"*
+- **Polite when AI is wrong:** *"Hmm, maybe I didn't phrase it clearly..."* — saying plainly *"you're wrong"* is what lets AI correct.
+- **No spec in the question:** *"help me optimize this"* — optimize in what direction? what's better? AI can only guess.
+
+## Thinking formula
+
+> **I set direction. You write details.**  
+> **I review output. You fix errors.**
+
+**One test:** look at the AI's last output and **find at least 3 things you'd change**. Can't find any? Either you didn't read carefully, or your product standards aren't clear enough yet.
+
+## Related
+
+- [02 · Spec before code](02-spec-before-code.md) — spec is the commander's baton
+- [06 · Vision non-negotiable](06-vision-non-negotiable.md)
+- [15 · Experience before review](15-experience-before-review.md)
+
+## Case studies
+
+[Gospel Hub](../case-studies/gospel-hub.md) · [Spybook](../case-studies/spybook.md) · [Contra Code](../case-studies/contra-code.md)
+
+---
+
 # 11 · 指挥者姿态，不做被动执行
 
 > **AI 是执行者，你是方向指挥者。审查 AI 输出是你的责任，不是 AI 自己会担起来的。**

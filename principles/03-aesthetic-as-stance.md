@@ -1,3 +1,60 @@
+# 03 · Aesthetic as Stance
+
+> **The first 3 seconds a user spends with your product decides not "what features it has," but "is this mine?"**
+
+## Core idea
+
+Aesthetic is the first filter your product applies. Color, typography, spacing, word choice, ambient sound — these "non-functional" things answer a single question in 3 seconds: **"Is this product on my side?"**
+
+Aesthetic isn't decoration. It's a **stance**:
+- Color choice = which category of product you're pushing against / aligning with
+- Type choice = who you're paying homage to, who you're putting distance from
+- Copy voice = whether you're serious or playful, old-school or contemporary
+
+In a world where AI products have converged on a narrow visual dialect (blue-purple gradients + glass morphism + rainbow buttons), **picking a restrained neutral palette + one accent color is more distinctive than chasing the trend.**
+
+## In real projects
+
+**AudioLib** —
+
+> Primary palette: **black / white / grey / orange**. Blue-purple, the AI default, explicitly excluded.
+
+This isn't an aesthetic preference. It's a brand stance: **refuse visual convergence with AI products**, build the feel of "infrastructure tool," not "tech demo."
+
+**Xianxia** —
+
+> *"我希望整体改一下这个应用的配色，要莫兰迪色系，带有仙侠的气质。"*
+
+Before features were complete, the overall aesthetic was locked — Morandi palette + Xianxia atmosphere. Features are the second layer. Aesthetic is the first.
+
+**Gospel Hub** — Dark background + gold / warm-white accent, to match the texture of Gospel music. Design reference chosen intentionally (Zapier, for its "warm professionalism"), not picked randomly.
+
+## Anti-patterns
+
+- **"Build features first, worry about visuals later"** — by the time the product works, the aesthetic is locked in by a hundred quick-and-dirty defaults.
+- **Trend-chasing** — glass-morphism one year, retro the next. The product has no stance.
+- **Defaulting to framework UI** — Material / shadcn defaults are neutral, but neutral ≠ a point of view.
+
+## Thinking formula
+
+> Who is my product **pushing against**? Who is it **aligning with**?  
+> If you can't answer, you don't have a stance yet.
+
+**Two self-checks:**
+1. What visually separates my product from "the mediocre players in my category"?
+2. If my screenshot sat next to a big-company product's screenshot, could a user tell them apart at a glance?
+
+## Related
+
+- [04 · Subtitle as promise](04-subtitle-as-promise.md) — words are part of aesthetic too
+- [09 · Decisive & meticulous](09-decisive-and-meticulous.md) — aesthetic is built from details
+
+## Case studies
+
+[AudioLib](../case-studies/audiolib.md) · [Xianxia](../case-studies/xianxia.md) · [Gospel Hub](../case-studies/gospel-hub.md)
+
+---
+
 # 03 · 气质即立场
 
 > **用户打开产品的前 3 秒，决定的不是"它有什么功能"，而是"这是不是我的东西"。**
