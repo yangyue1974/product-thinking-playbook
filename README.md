@@ -8,7 +8,7 @@
 
 > A decision-making playbook for solo product builders — **20 principles across 5 dimensions**,  
 > extracted from the full development conversations of 6 shipped products.  
-> 独立开发者的产品判断手册 · 从 6 个已上线产品的全过程对话中提炼 · 20 条原则 / 5 个维度
+> 独立开发者的产品思维手册 · 从 6 个已上线产品的全过程对话中提炼 · 20 条原则 / 5 个维度
 
 [中文](#中文) · [English](#english)
 
